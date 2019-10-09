@@ -18,10 +18,10 @@ namespace Functional
         /// Harmonics this instance.
         /// </summary>
         Utility util = new Utility();
-        public void harmonic()
+        public void Harmonic()
         {
             Console.WriteLine("Enter the Nth Number Which you find the Harmonic Value");
-            int N = util.inputInteger();
+            int N = util.InputInteger();
             float Harmonic = 1;
             ////for finding Harmonic With its Formula h1=1,h2=h1+1/2,h3=h2+1/3.....hn=hn-1+1/n;
             for(int i=2;i<=N;i++)

@@ -19,7 +19,7 @@ namespace Functional
         /// </summary>
         /// <param name="t">t. is Temprature which is double Type in Farenhite</param>
         /// <param name="v"> v. is Wind Speed in MIles/Hour</param>
-        public void wind(double t,double v)
+        public void Wind(double t,double v)
         {
             ////to check the condition that t is not more then 50 for  the formula is not valid if t is larger than 50
             if (t <= 50)

@@ -26,16 +26,16 @@ namespace Functional
             {
                 arr[i] = util.InputInteger();
             }
-            sum(arr);
+            Sum(arr);
         }
         /// <summary>
         /// Sums the specified To find the Triplet OF Array.
         /// </summary>
         /// <param name="arr">The arr.</param>
-        public void sum(int[] arr)
+        public void Sum(int[] arr)
         {
             bool found = false;
-            int[] arr1 = util.bubbleSort(arr);
+            int[] arr1 = util.BubbleSort(arr);
             int n = arr1.Length;
             Console.WriteLine("Triplet Sum Zero is: ");
             for (int i = 0; i<n; i++)

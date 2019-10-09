@@ -18,10 +18,10 @@ namespace Functional
         /// Leaps this instance.
         /// </summary>
         Utility util = new Utility();
-        public void leap()
+        public void Leap()
         {
             Console.WriteLine("Enter the Year which you want to check the leap year?");
-            int year = util.inputInteger();
+            int year = util.InputInteger();
             int n = year;
             int count = 0;
             ////Counting the Digit

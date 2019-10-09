@@ -21,7 +21,7 @@ namespace Functional
         /// <param name="m">The m.</param>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int[,] arrayInteger(int m, int n)
+        public int[,] ArrayInteger(int m, int n)
         {
             int[,] arrInt = new int[m,n];
             Console.WriteLine("Enter the Array element In Integer");
@@ -29,7 +29,7 @@ namespace Functional
             {
                 for(int j=0;j<n;j++)
                 {
-                    arrInt[i, j] = util.inputInteger();
+                    arrInt[i, j] = util.InputInteger();
                 }
             }
             return arrInt;
@@ -40,7 +40,7 @@ namespace Functional
         /// <param name="m">The m.</param>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public double[,] arraydouble(int m, int n)
+        public double[,] Arraydouble(int m, int n)
         {
             double[,] arrDouble = new double[m, n];
             Console.WriteLine("Enter the Array element In Integer");
@@ -48,7 +48,7 @@ namespace Functional
             {
                 for (int j = 0; j <n; j++)
                 {
-                    arrDouble[i, j] = util.inputDouble();
+                    arrDouble[i, j] = util.InputDouble();
                 }
             }
             return arrDouble;
@@ -59,7 +59,7 @@ namespace Functional
         /// <param name="m">The m.</param>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public bool[,] arrayBoolean(int m, int n)
+        public bool[,] ArrayBoolean(int m, int n)
         {
             Console.WriteLine("Enter the Array Element in Bool");
             bool[,] arrBool = new bool[m, n];
@@ -67,7 +67,7 @@ namespace Functional
             {
                 for (int j = 0; j <n; j++)
                 {
-                    arrBool[i, j] = util.inputBool();
+                    arrBool[i, j] = util.InputBool();
                 }
             }
             return arrBool;
@@ -80,7 +80,7 @@ namespace Functional
         /// <param name="arrBool">The arr bool.</param>
         /// <param name="m">The m.</param>
         /// <param name="n">The n.</param>
-        public void display(int[,] arrInt, double[,] arrDouble, bool[,] arrBool, int m, int n)
+        public void Display(int[,] arrInt, double[,] arrDouble, bool[,] arrBool, int m, int n)
         {
             Console.WriteLine("\nArray Element in Integer");
             for (int i = 0; i < m; i++)

@@ -19,7 +19,7 @@ namespace Functional
     /// </summary>
     /// <param name="x"></param>
     /// <param name="y"></param>
-        public  void ecludianDistance(int x, int y)
+        public  void EcludianDistance(int x, int y)
         {
             ////calculate thePOwer Of cordinate
             double a = Math.Pow(x, x);

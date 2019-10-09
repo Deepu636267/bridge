@@ -24,7 +24,7 @@ namespace Functional
                 Console.WriteLine("Welcome To the TicTacToe Game:");
                 Console.WriteLine("You have played against the computer and computer has first play then you have play");
                 Console.WriteLine("Please Enter Your Name");
-                string User = util.inputString();
+                string User = util.InputString();
                 Console.WriteLine("hi " + User + " your marker is; " + UserMarker);
                 //intializ board
                 char[] counter = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
@@ -64,14 +64,10 @@ namespace Functional
                     char choice = Convert.ToChar(Console.ReadLine());
                     replace(board, choice, UserMarker);
                     display(board);
-
                     if (winner())
                     {
-
-                        Console.WriteLine(" Winner user");
+                       Console.WriteLine(" Winner user");
                         break;
-
-
                     }
                 }
                 if (winner())
@@ -85,9 +81,9 @@ namespace Functional
         /// <summary>
         /// Displays the specified board.
         /// </summary>
-        /// <param name="board">The board.</param>
+       /// <param name="board">The board.</param>
        static void display(char[,] board)
-        {
+       {
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)

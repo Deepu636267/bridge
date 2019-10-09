@@ -18,10 +18,10 @@ namespace Functional
         /// Flips this instance.
         /// </summary>
         Utility util = new Utility();
-        public void flip()
+        public void Flip()
         {
             Console.WriteLine("Enter the Number How Many Times Do You Want To Flip");
-            int n = util.inputInteger();
+            int n = util.InputInteger();
             double head_p, tails_p;
             int T_count = 0, H_Count = 0;
             double val = 0;

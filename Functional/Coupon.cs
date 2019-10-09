@@ -19,19 +19,19 @@ namespace Functional
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int getCoupon(int n)
+        public int GetCoupon(int n)
         {
             Random random = new Random();
             return (int)(random.NextDouble() * n);
         }
-        public int collect(int n)
+        public int Collect(int n)
         {
             int distinct = 0;
             int count = 0;
             bool[] Collected = new bool[n];
             while (distinct < n)
             {
-                int value = getCoupon(n);
+                int value = GetCoupon(n);
                 count++;
                 if (!Collected[value])
                 {

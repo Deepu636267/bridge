@@ -19,11 +19,11 @@ namespace Functional
         /// <summary>
         /// Replaces this instance for replacing String.
         /// </summary>
-        public void replace()
+        public void Replace()
         {
             string str1 = "Hello!";
             Console.WriteLine("Enter the String Do you want Place : Min 3 char");
-            string str2 = util.inputString();
+            string str2 = util.InputString();
             String str3 = "How Are You?";
             ////here if is to check the character length
             if (str2.Length<3)

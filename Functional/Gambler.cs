@@ -19,22 +19,22 @@ namespace Functional
         /// <summary>
         /// Plays this instance.
         /// </summary>
-        public void play()
+        public void Play()
         {
             Console.WriteLine("Enter the Total Stake");
-            int stake = utility.inputInteger();
+            int stake = utility.InputInteger();
             if (stake <= 0)
             {
                 Console.WriteLine("Check Your Inputs and Enter In Positive Numbers");
             }
             Console.WriteLine("Enter the Goa what You want to acheeive");
-            int goal = utility.inputInteger();
+            int goal = utility.InputInteger();
             if (goal <= 0)
             {
                 Console.WriteLine("Check Your Inputs and Enter In Positive Numbers");
             }
             Console.WriteLine("Enter the number's How many Times You Want to Play?");
-            int trials = utility.inputInteger();
+            int trials = utility.InputInteger();
             if (trials <= 0)
             {
                 Console.WriteLine("Check Your Inputs and Enter In Positive Numbers");

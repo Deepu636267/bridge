@@ -18,10 +18,10 @@ namespace Functional
         /// <summary>
         /// Powers this instance.
         /// </summary>
-        public void power()
+        public void Power()
         {
             Console.WriteLine("Enter the number To find the 2's  power of that number");
-            int num = util.inputInteger();
+            int num = util.InputInteger();
             int pow = 1;
             ////its has check that the num value which is send if it has finding power of two 
             ////then it wil give result in the range of Integer or not.

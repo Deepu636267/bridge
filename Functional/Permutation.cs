@@ -13,19 +13,18 @@ namespace Functional
     {
         string result = "";
         Utility util = new Utility();
-        public void permutateString()
+        public void PermutateString()
         {
-            string str = util.inputString();
-          
-         string ar= permutation(str.ToCharArray(), 0);
-            string[] ar1 = ar.Split(" ");
-            Console.WriteLine(ar1.Length);
+          string str = util.InputString();
+          string ar= Permutation1(str.ToCharArray(), 0);
+          string[] ar1 = ar.Split(" ");
+          Console.WriteLine(ar1.Length);
           for(int i=0;i<ar.Length;i++)
-            {
-                Console.Write(ar[i]);
-            }
+          {
+            Console.Write(ar[i]);
+          }
         }
-        public string permutation(char[] ch, int current)
+        public string Permutation1(char[] ch, int current)
         {
             
             if (current == ch.Length - 1)
@@ -36,13 +35,19 @@ namespace Functional
             }
             for (int i = current; i < ch.Length; i++)
             {
-                swap(ch, current, i);
-             permutation(ch, current + 1);
-                swap(ch, current, i);
+                Swap(ch, current, i);
+                Permutation1(ch, current + 1);
+                Swap(ch, current, i);
             }
             return result;
         }
-        public static void swap(char[] ch, int i, int j)
+        /// <summary>
+        /// Swaps the specified ch.
+        /// </summary>
+        /// <param name="ch">The ch.</param>
+        /// <param name="i">The i.</param>
+        /// <param name="j">The j.</param>
+        public static void Swap(char[] ch, int i, int j)
         {
             char temp = ch[i];
             ch[i] = ch[j];

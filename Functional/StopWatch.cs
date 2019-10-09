@@ -17,14 +17,14 @@ namespace Functional
         /// <summary>
         /// Starts this instance start the stop watch.
         /// </summary>
-        public void start()
+        public void Start()
         {
             startTimer = DateTime.Now.Millisecond; 
         }
         /// <summary>
         /// Stops this instance stop the stopwatch.
         /// </summary>
-        public void stop()
+        public void Stop()
         {
             stopTimer = DateTime.Now.Millisecond; 
         }
@@ -32,7 +32,7 @@ namespace Functional
         /// Gets the elapsed time between start and stop.
         /// </summary>
         /// <returns></returns>
-        public int getElapsedTime()
+        public int GetElapsedTime()
         {
             elapsed = stopTimer - startTimer;
             return (int)elapsed;

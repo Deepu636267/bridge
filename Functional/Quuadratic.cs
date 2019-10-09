@@ -17,7 +17,7 @@ namespace Functional
         /// <param name="a">a.</param>
         /// <param name="b">The b.</param>
         /// <param name="c">The c.</param>
-        public void findRoot(int a, int b ,int c)
+        public void FindRoot(int a, int b ,int c)
         {
             int d = (b * b - 4 * a * c);
             double root1 = 0.0;

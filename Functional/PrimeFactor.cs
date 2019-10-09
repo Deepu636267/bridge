@@ -19,10 +19,10 @@ namespace Functional
         /// </summary>
 
        Utility util = new Utility();
-       public void factor()
+       public void Factor()
         {
             Console.WriteLine("Enter the Number To find The Prime Factor");
-            int Num = util.inputInteger();
+            int Num = util.InputInteger();
             ////while is used to find factor with 2
             while (Num % 2 == 0)
             {
