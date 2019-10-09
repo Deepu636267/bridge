@@ -18,7 +18,7 @@ namespace DataStructure
         /// <summary>
         /// Adds the prime number in Array with in the range.
         /// </summary>
-        public void add()
+        public void Add()
         {
             int[][] pnum = new int[10][];
             int k = 0, count = 0; ;
@@ -29,7 +29,7 @@ namespace DataStructure
                 ////here using the jagged array concept
                 if (i != ub)
                 {
-                    if (util.prime(i))
+                    if (util.Prime(i))
                     {
                         count++;
                     }
@@ -54,7 +54,7 @@ namespace DataStructure
                     l = 0;
                     ub = ub + 100;
                 }
-                if (util.prime(i))
+                if (util.Prime(i))
                 {
                     pnum[k][l++] = i;
                 }

@@ -20,7 +20,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="FileName">Name of the file.</param>
         /// <returns></returns>
-        public string readFile(string FileName)
+        public string ReadFile(string FileName)
         {
             string st = "";
             try
@@ -46,7 +46,7 @@ namespace DataStructure
         /// Inputs the string.
         /// </summary>
         /// <returns></returns>
-        public string inputString()
+        public string InputString()
         {
             return Console.ReadLine();
         }
@@ -54,7 +54,7 @@ namespace DataStructure
         /// Inputs the integer.
         /// </summary>
         /// <returns></returns>
-        public int inputInteger()
+        public int InputInteger()
         {
             return Convert.ToInt32(Console.ReadLine());
         }
@@ -64,7 +64,7 @@ namespace DataStructure
         /// <param name="fileName">Name of the file.</param>
         /// <param name="line">The line.</param>
         /// <returns></returns>
-        public bool writeInFile(string fileName,string line)
+        public bool WriteInFile(string fileName,string line)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public bool prime(int n)
+        public bool Prime(int n)
         {
             for(int j=2;j<=n/2;j++)
             {
@@ -102,10 +102,10 @@ namespace DataStructure
         /// <param name="n1">The n1.</param>
         /// <param name="n2">The n2.</param>
         /// <returns></returns>
-        public bool anagram(int n1, int n2)
+        public bool Anagram(int n1, int n2)
         {
-            int[] n1count = count(n1);
-            int[] n2count = count(n2);
+            int[] n1count = Count(n1);
+            int[] n2count = Count(n2);
             for (int i = 0; i < n2count.Length; i++)
             {
                 if (n1count[i] != n2count[i])
@@ -120,7 +120,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int[] count(int n)
+        public int[] Count(int n)
         {
             int[] count = new int[10];
             int temp = n;
@@ -137,12 +137,12 @@ namespace DataStructure
         /// </summary>
         /// <param name="bankdata">The bankdata.</param>
         /// <returns></returns>
-        public int depositeCash(BankingCashCounter bankdata)
+        public int DepositeCash(BankingCashCounter bankdata)
         {
             int amount;
             Console.WriteLine("Enter the Amount You Want Deposite:");
             Console.WriteLine("Note:Amount should Be greater then zero");
-            amount = inputInteger();
+            amount = InputInteger();
             if(amount>0)
             {
                 BankingCashCounter.InitialAmount = BankingCashCounter.InitialAmount + amount;
@@ -162,12 +162,12 @@ namespace DataStructure
         /// </summary>
         /// <param name="bankdata">The bankdata.</param>
         /// <returns></returns>
-        public int withDrawalCash(BankingCashCounter bankdata)
+        public int WithDrawalCash(BankingCashCounter bankdata)
         {
             int amount;
             Console.WriteLine("Available Bank Cash Balance is: " + BankingCashCounter.InitialAmount);
             Console.WriteLine("Enter the Amount For Withdraw");
-            amount = inputInteger();
+            amount = InputInteger();
             if(amount<BankingCashCounter.InitialAmount)
             {
                 BankingCashCounter.InitialAmount = BankingCashCounter.InitialAmount - amount;

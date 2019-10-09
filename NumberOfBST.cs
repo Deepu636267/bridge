@@ -18,11 +18,11 @@ namespace DataStructure
         /// Calculations the BST.
         /// </summary>
         /// <param name="arr">The arr.</param>
-        public void calculationBST(int[] arr)
+        public void CalculationBST(int[] arr)
         {
             for(int i=0;i<arr.Length;i++)
             {
-                int r = claculate(arr[i]);
+                int r = Claculate(arr[i]);
                 Console.WriteLine(r);
             }
         }
@@ -31,11 +31,11 @@ namespace DataStructure
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int claculate(int n)
+        public int Claculate(int n)
         {
-            int numerator = factorial(2 * n);
-            int denominator1 = factorial(n+1);
-            int denominator2 = factorial(n);
+            int numerator = Factorial(2 * n);
+            int denominator1 = Factorial(n+1);
+            int denominator2 = Factorial(n);
             return (numerator) / (denominator1 * denominator2);
         }
         /// <summary>
@@ -43,7 +43,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int factorial(int n)
+        public int Factorial(int n)
         {
             int f = 1;
             while(n>=1)

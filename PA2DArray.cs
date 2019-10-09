@@ -16,14 +16,14 @@ namespace DataStructure
     class PA2DArray
     {
         Utility util = new Utility();
-        public void addAngaram()
+        public void AddAngaram()
         {
                 ArrayList ar = new ArrayList();
                 int count = 0;
             ////adding the prime number in list by using inbuilt method ArrayList()
                 for (int i = 2; i <= 1000; i++)
                 {
-                   if (util.prime(i))
+                   if (util.Prime(i))
                         ar.Add(i);
                 }
                 ////Taking out from the list and check for anagram by holding one value and search in all list
@@ -35,7 +35,7 @@ namespace DataStructure
                     {
                     ////Count the anagram for the rowsize of array
                         int f1 = (int)ar[j];
-                        if (util.anagram(f,f1))
+                        if (util.Anagram(f,f1))
                         {
                             count++;
                         }
@@ -51,7 +51,7 @@ namespace DataStructure
                 for (int j = i + 1; j<ar.Count; j++) 
                 {
                     int f1 = (int)ar[j];
-                    if (util.anagram(f, f1))
+                    if (util.Anagram(f, f1))
                     {
                        Console.Write(array[k,0]= f);
                        Console.Write(" ");

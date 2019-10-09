@@ -21,7 +21,7 @@ namespace DataStructure
         /// Adds the last.
         /// </summary>
         /// <param name="data">The data.</param>
-        public void addLast(T data)
+        public void AddLast(T data)
         {
             Node<T> newItem = new Node<T>();
             newItem.data = data;
@@ -44,7 +44,7 @@ namespace DataStructure
         /// <summary>
         /// Reads all data in Node.
         /// </summary>
-        public void readAll()
+        public void ReadAll()
         {
             Node<T> start = head;
             while (start != null)
@@ -59,7 +59,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-        public bool delete(T item)
+        public bool Delete(T item)
         {
             if (head.data.Equals(item))
             {
@@ -98,7 +98,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-        public bool search(T item)
+        public bool Search(T item)
         {
             Node<T> a = head;
             while (a != null)
@@ -115,7 +115,7 @@ namespace DataStructure
         /// Gets the all data form link list.
         /// </summary>
         /// <returns></returns>
-        public string getLinkLis()
+        public string GetLinkLis()
         {
             Node<T> last;
             string data = "";
@@ -136,7 +136,7 @@ namespace DataStructure
         /// insert in the sorted Nodes.
         /// </summary>
         /// <param name="item">The item.</param>
-        public void sortedInsert(T item)
+        public void SortedInsert(T item)
         {
             Node<T> new_node = new Node<T>();
             Node<T> current;

@@ -20,27 +20,27 @@ namespace DataStructure
         /// <summary>
         /// Operations the file.
         /// </summary>
-        public void operationFile()
+        public void OperationFile()
         {
 
-            string st = util.readFile("C://Users//Bridgelabz//source//repos//DataStructure//Node.txt");
+            string st = util.ReadFile("C://Users//Bridgelabz//source//repos//DataStructure//Node.txt");
             //// split the string line with space and put in the array
             string[] data = st.Split(" ");
              for(int i=0;i<data.Length;i++)
             {
-                link.addLast(data[i]);
+                link.AddLast(data[i]);
             }
-            link.readAll();
+            link.ReadAll();
             Console.WriteLine("Enter the Element YOu want to search");
-            string element = util.inputString();
+            string element = util.InputString();
             ////Searching element and if found then delete and add all data in file
             ////,if not found then add in to the list and then all data add in to the file
-            bool find = link.search(element);
+            bool find = link.Search(element);
             if (find==true)
             {
-                link.delete(element);
+                link.Delete(element);
                 Console.WriteLine(element + "Deleted");
-                bool f = util.writeInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node.txt", link.getLinkLis());
+                bool f = util.WriteInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node.txt", link.GetLinkLis());
                 if(f==true)
                 {
                     Console.WriteLine("Write all Element in File");
@@ -53,9 +53,9 @@ namespace DataStructure
             }
             else
             {
-                link.addLast(element);
+                link.AddLast(element);
                 Console.WriteLine(element + "Added");
-                bool f = util.writeInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node.txt", link.getLinkLis());
+                bool f = util.WriteInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node.txt", link.GetLinkLis());
                 if (f == true)
                 {
                     Console.WriteLine("Write all Element in file");

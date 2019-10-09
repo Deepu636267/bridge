@@ -22,15 +22,15 @@ namespace DataStructure
         /// Adds the element from  rear.
         /// </summary>
         /// <param name="item">The item.</param>
-        public void addRear(char item)
+        public void AddRear(char item)
         {
             ////chck the queue array is full
-            if(isFull())
+            if(IsFull())
             {
                 Console.WriteLine("Queue is Full");
                 return;
             }
-            else if(isEmpty())
+            else if(IsEmpty())
             {
                 
                 rear = 0;
@@ -47,14 +47,14 @@ namespace DataStructure
         /// Adds the element from  front.
         /// </summary>
         /// <param name="item">The item.</param>
-        public void addFront(char item)
+        public void AddFront(char item)
         {
             if (front==20)
             {
                 Console.WriteLine("Queue is Full");
                 return;
             }
-            else if (isEmpty())
+            else if (IsEmpty())
             {
                 front = rear = 0;
                 queue[front] = item;
@@ -70,7 +70,7 @@ namespace DataStructure
         /// Removes the element from  rear.
         /// </summary>
         /// <returns></returns>
-        public char removeRear()
+        public char RemoveRear()
         {
             char it = queue[rear];
           //   Console.WriteLine(item);
@@ -83,7 +83,7 @@ namespace DataStructure
         /// Removes the element from front.
         /// </summary>
         /// <returns></returns>
-        public char removeFront()
+        public char RemoveFront()
         {
 
             front++;
@@ -96,9 +96,9 @@ namespace DataStructure
         /// <summary>
         /// Peeks this instance for finding the top element in queue.
         /// </summary>
-        public void peek()
+        public void Peek()
         {
-            if(isEmpty())
+            if(IsEmpty())
             {
                 Console.WriteLine("Queue is Empty");
             }
@@ -110,9 +110,9 @@ namespace DataStructure
         /// <summary>
         /// Displays this instance.
         /// </summary>
-        public void display()
+        public void Display()
         {
-            if(isEmpty())
+            if(IsEmpty())
             {
                 return;
             }
@@ -128,7 +128,7 @@ namespace DataStructure
         /// <returns>
         ///   <c>true</c> if this instance is full; otherwise, <c>false</c>.
         /// </returns>
-        public bool isFull()
+        public bool IsFull()
         {
             if(rear==20)
             {
@@ -142,7 +142,7 @@ namespace DataStructure
         /// <returns>
         ///   <c>true</c> if this instance is empty; otherwise, <c>false</c>.
         /// </returns>
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             if(front==-1 && rear==-1)
             {
@@ -154,7 +154,7 @@ namespace DataStructure
         /// Totals this instance gives the total size of Queue.
         /// </summary>
         /// <returns></returns>
-        public int total()
+        public int Total()
         {
             return size;
         }

@@ -19,19 +19,19 @@ namespace DataStructure
         /// <summary>
         /// find Prime number and store in the stack.
         /// </summary>
-        public void primeStack()
+        public void PrimeStack()
         {
             for(int i=2;i<=1000;i++)
             {
-                if(util.prime(i))
+                if(util.Prime(i))
                 {
-                    Stack.push(i);
+                    Stack.Push(i);
                 }
             }
             /////poping element one by one and pint in Linked List Class
-            while(!Stack.isEmpty())
+            while(!Stack.IsEmpty())
             {
-               Stack.pop();
+               Stack.Pop();
             }
         }
     }

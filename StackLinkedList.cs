@@ -21,7 +21,7 @@ namespace DataStructure
         /// Pushes the specified item.
         /// </summary>
         /// <param name="item">The item.</param>
-        public void push(T item)
+        public void Push(T item)
         {
             Node<T> newNode = new Node<T>();
             newNode.data = item;
@@ -31,7 +31,7 @@ namespace DataStructure
         /// <summary>
         /// Pops the data+.
         /// </summary>
-        public void pop()
+        public void Pop()
         {
             if(top==null)
             {
@@ -49,7 +49,7 @@ namespace DataStructure
         /// <returns>
         ///   <c>true</c> if this instance is empty; otherwise, <c>false</c>.
         /// </returns>
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             if(top==null)
             {

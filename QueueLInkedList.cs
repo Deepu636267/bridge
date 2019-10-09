@@ -22,7 +22,7 @@ namespace DataStructure
         /// add the item in queue.
         /// </summary>
         /// <param name="item">The item.</param>
-        public void enQueue(T item)
+        public void EnQueue(T item)
         {
             Node<T> newNode = new Node<T>();
             newNode.data = item;
@@ -42,7 +42,7 @@ namespace DataStructure
         /// <summary>
         /// Displays all the data.
         /// </summary>
-        public void display()
+        public void Display()
         {
             if (front == null && rear == null)
             {
@@ -61,7 +61,7 @@ namespace DataStructure
         /// <summary>
         /// Dequeues the people who are in the line of bank.
         /// </summary>
-        public void dequeueBank()
+        public void DequeueBank()
         {
             if (front == null && rear == null)
             {
@@ -75,7 +75,7 @@ namespace DataStructure
         /// <summary>
         /// Dequeues this instance.
         /// </summary>
-        public T dequeue()
+        public T Dequeue()
         {
             if (front == null && rear == null)
             {
@@ -97,7 +97,7 @@ namespace DataStructure
         /// Totals this instance find the total size of people in queue.
         /// </summary>
         /// <returns></returns>
-        public int total()
+        public int Total()
         {
             return size;
         }

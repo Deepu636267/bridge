@@ -19,11 +19,11 @@ namespace DataStructure
         /// </summary>
         /// <param name="m"></param>
         /// <param name="y"></param>
-        public void displayCalender(int m, int y)
+        public void DisplayCalender(int m, int y)
         {
-            int d = day(m, 1, y);
-            int[,] cal = cal2DArray(d,m,y);
-            display(cal,m,y);
+            int d = Day(m, 1, y);
+            int[,] cal = Cal2DArray(d,m,y);
+            Display(cal,m,y);
         }
         /// <summary>
         /// day(int month, int day, int year) method to calculate the first day of the month.
@@ -32,7 +32,7 @@ namespace DataStructure
         /// <param name="day"></param>
         /// <param name="year"></param>
         /// <returns></returns>
-        public int day(int month, int day, int year)
+        public int Day(int month, int day, int year)
         {
             int y = year - (14 - month) / 12;
             int x = y + y / 4 - y / 100 + y / 400;
@@ -41,7 +41,7 @@ namespace DataStructure
             return d;
         }
         // return true if the given year is a leap year
-        public static bool isLeapYear(int year)
+        public static bool IsLeapYear(int year)
         {
             if ((year % 4 == 0) && (year % 100 != 0)) return true;
             if (year % 400 == 0) return true;
@@ -54,14 +54,14 @@ namespace DataStructure
         /// <param name="month"></param>
         /// <param name="year"></param>
         /// <returns></returns>
-        public int[,] cal2DArray(int d,int month,int year)
+        public int[,] Cal2DArray(int d,int month,int year)
         {
             // days[i] = number of days in month i
             int[] days = {
                     0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
                 };
            // check for leap year
-            if (month == 2 && isLeapYear(year)) days[month] = 29;
+            if (month == 2 && IsLeapYear(year)) days[month] = 29;
            int[,] mycalendar= new int[6,7];
            int firstday =1;
        
@@ -88,7 +88,7 @@ namespace DataStructure
         /// <param name="Calender"></param>
         /// <param name="month"></param>
         /// <param name="year"></param>
-        public void display(int[,] Calender,int month, int year)
+        public void Display(int[,] Calender,int month, int year)
         {
             string[] months = {
                     "",                               // leave empty so that months[1] = "January"

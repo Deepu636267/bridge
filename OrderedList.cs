@@ -20,27 +20,27 @@ namespace DataStructure
         /// <summary>
         /// Operations the ordered file.
         /// </summary>
-        public void operationOrderedFile()
+        public void OperationOrderedFile()
         {
           ////Reading the file  
-            string st = util.readFile("C://Users//Bridgelabz//source//repos//DataStructure//Node1.txt");
+            string st = util.ReadFile("C://Users//Bridgelabz//source//repos//DataStructure//Node1.txt");
             string[] str = st.Split(" ");
             for (int i=0;i<str.Length-1;i++)
             {
                 ////adding in too list 
-                list.addLast(Convert.ToInt32(str[i]));
+                list.AddLast(Convert.ToInt32(str[i]));
             }
             Console.WriteLine("Enter the Element That You Want To Search");
-            int element = util.inputInteger();
+            int element = util.InputInteger();
             ////Searching element and if found then delete and add all data in file
             ////,if not found then add in to the list and then all data add in to the file
-            bool b=list.search(element);
+            bool b=list.Search(element);
             if(b==true)
             {
                 Console.WriteLine(" Element Found And Element Deleted");
-                list.delete(element);
-                bool f=util.writeInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node1.txt", list.getLinkLis());
-                list.readAll();
+                list.Delete(element);
+                bool f=util.WriteInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node1.txt", list.GetLinkLis());
+                list.ReadAll();
                 if (f == true)
                 {
                     Console.WriteLine("Write all Element in File");
@@ -53,9 +53,9 @@ namespace DataStructure
             else
             {
                 Console.WriteLine("Element Not Found And Element added");
-                list.sortedInsert(element);
-                bool f = util.writeInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node1.txt", list.getLinkLis());
-                list.readAll();
+                list.SortedInsert(element);
+                bool f = util.WriteInFile("C://Users//Bridgelabz//source//repos//DataStructure//Node1.txt", list.GetLinkLis());
+                list.ReadAll();
                 if (f == true)
                 {
                     Console.WriteLine("Write all Element in File");

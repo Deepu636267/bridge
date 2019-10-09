@@ -21,7 +21,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-        public bool push(char item)
+        public bool Push(char item)
         {
             if (top == 49)
             {
@@ -38,7 +38,7 @@ namespace DataStructure
         /// Pops the element .
         /// </summary>
         /// <returns></returns>
-        public char pop()
+        public char Pop()
         {
             if (top == -1)
             {
@@ -58,7 +58,7 @@ namespace DataStructure
         /// <returns>
         ///   <c>true</c> if this instance is empty; otherwise, <c>false</c>.
         /// </returns>
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return (top == -1) ? true : false;
         }
@@ -70,7 +70,7 @@ namespace DataStructure
         /// <returns>
         ///   <c>true</c> if [is matching parenthesis] [the specified CH1]; otherwise, <c>false</c>.
         /// </returns>
-        public bool isMatchingParenthesis(char ch1, char ch2)
+        public bool IsMatchingParenthesis(char ch1, char ch2)
         {
             if (ch1 == '(' && ch2 == ')')
                 return true;

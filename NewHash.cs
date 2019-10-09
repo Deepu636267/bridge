@@ -22,7 +22,7 @@ namespace DataStructure
         /// </summary>
         /// <param name="x">The x.</param>
         /// <returns></returns>
-        public int hashCode(int x)
+        public int HashCode(int x)
         {
             return x % 11;
         }
@@ -30,18 +30,18 @@ namespace DataStructure
         /// Adds to hash table.
         /// </summary>
         /// <param name="x">The x.</param>
-        public void addToHashTable(int x)
+        public void AddToHashTable(int x)
         {
-            int index = hashCode(x);
+            int index = HashCode(x);
 
             if (hashTable[index] == null)
             {
                 hashTable[index] = new LinkedList<int>();
-                hashTable[index].addLast(x);
+                hashTable[index].AddLast(x);
             }
             else
             {
-                hashTable[index].addLast(x);
+                hashTable[index].AddLast(x);
             }
         }
         /// <summary>
@@ -53,7 +53,7 @@ namespace DataStructure
             {
                 if (hashTable[i] != null)
                 {
-                    hashTable[i].readAll();
+                    hashTable[i].ReadAll();
                 }
             }
         }
@@ -64,14 +64,14 @@ namespace DataStructure
         /// <returns></returns>
         public bool SearchHashTable(int x)
         {
-            int index = hashCode(x);
+            int index = HashCode(x);
             if (hashTable[index] == null)
             {
                 return false;
             }
             else
             {
-                return hashTable[index].search(x);
+                return hashTable[index].Search(x);
             }
         }
         /// <summary>
@@ -85,7 +85,7 @@ namespace DataStructure
             {
                 if (hashTable[i] != null)
                 {
-                    st=st+hashTable[i].getLinkLis();
+                    st=st+hashTable[i].GetLinkLis();
                 }
             }
             return st;
@@ -96,28 +96,28 @@ namespace DataStructure
         /// </summary>
         public void HashingFunction()
         {
-            string st = util.readFile("C://Users//Bridgelabz//source//repos//DataStructure//HashTable.txt");
+            string st = util.ReadFile("C://Users//Bridgelabz//source//repos//DataStructure//HashTable.txt");
             string[] str = st.Split(" ");
             // adding elements to hash table
             for (int i = 0; i <str.Length-1; i++)
             {
-                addToHashTable(Convert.ToInt32(str[i]));
+                AddToHashTable(Convert.ToInt32(str[i]));
             }
             Console.WriteLine("All Data In File Is: ");
             printHashTable();
             Console.WriteLine("Enter the Element do you want to search");
-            int n = util.inputInteger();
-            int index = hashCode(n);
+            int n = util.InputInteger();
+            int index = HashCode(n);
             ////search the number if found the give true if not then false
             bool f = SearchHashTable(n);
             Console.WriteLine(f);
             if(f==true)
             {
                 Console.WriteLine("Element found an deleted");
-                hashTable[index].delete(n);
+                hashTable[index].Delete(n);
                 Console.WriteLine("After removing");
                 printHashTable();
-                bool f2 = util.writeInFile("C://Users//Bridgelabz//source//repos//DataStructure//HashTable.txt", getAllData());
+                bool f2 = util.WriteInFile("C://Users//Bridgelabz//source//repos//DataStructure//HashTable.txt", getAllData());
                 if (f2 == true)
                 {
                     Console.WriteLine("Write all Element in File");
@@ -130,9 +130,9 @@ namespace DataStructure
             else
             {
                 Console.WriteLine("Element Not Found so it will be added in the list");
-                addToHashTable(n);
+                AddToHashTable(n);
                 printHashTable();
-                bool f1 = util.writeInFile("C://Users//Bridgelabz//source//repos//DataStructure//HashTable.txt", getAllData());
+                bool f1 = util.WriteInFile("C://Users//Bridgelabz//source//repos//DataStructure//HashTable.txt", getAllData());
                 if (f1 == true)
                 {
                     Console.WriteLine("Write all Element in File");

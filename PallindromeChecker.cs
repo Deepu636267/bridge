@@ -20,23 +20,23 @@ namespace DataStructure
         /// <summary>
         /// pallindrome() is a method to for all process .
         /// </summary>
-        public void pallindrome()
+        public void Pallindrome()
         {
             ////Reading htrough the file
             Console.WriteLine("Enter the String That You WantTo check For Pallindrome");
-            string s = util.inputString();
+            string s = util.InputString();
             char[] ch = s.ToCharArray();
             for(int i=0;i<ch.Length;i++)
             {
                 ////adding in them 
-                queue.addRear(ch[i]);
+                queue.AddRear(ch[i]);
             }
             int flag = 0;
-             queue.display();
+             queue.Display();
             ////for taking the string out and check for palindrome in the pattern of FIFO
-             while(queue.total()>1)
+             while(queue.Total()>1)
              {
-                 if (queue.removeFront() != queue.removeRear())
+                 if (queue.RemoveFront() != queue.RemoveRear())
                  {
                      flag = 1;
                      break;

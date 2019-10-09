@@ -20,22 +20,22 @@ namespace DataStructure
         /// if(we found open parenthises then push in the stack if close then its pop it and compare both are same or not        /// </summary>
         /// <param name="arr">The arr.</param>
         /// <returns></returns>
-        public bool balanced(char[] arr)
+        public bool Balanced(char[] arr)
         {
             Stack st = new Stack();
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] == '{' || arr[i] == '[' || arr[i] == '(')
                 {
-                    st.push(arr[i]);
+                    st.Push(arr[i]);
                 }
                 else if (arr[i] == '}' || arr[i] == ']' || arr[i] == ')')
                 {
-                    if (st.isEmpty())
+                    if (st.IsEmpty())
                     {
                         return false;
                     }
-                    else if (!st.isMatchingParenthesis(st.pop(), arr[i]))
+                    else if (!st.IsMatchingParenthesis(st.Pop(), arr[i]))
                     {
                         return false;
                     }
@@ -43,7 +43,7 @@ namespace DataStructure
                 }
             }
             ////if whole stack is empty then it is balanced
-            if (st.isEmpty())
+            if (st.IsEmpty())
             {
                 return true;
             }

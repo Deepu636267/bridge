@@ -21,12 +21,12 @@ namespace DataStructure
         /// <summary>
         /// Findings the prime number and store in to the list.
         /// </summary>
-        public void findingPA()
+        public void FindingPA()
         {
             ArrayList alist = new ArrayList();
             for(int i=2;i<=1000;i++)
             {
-                if(util.prime(i))
+                if(util.Prime(i))
                 {
                     alist.Add(i);
                 }
@@ -40,17 +40,17 @@ namespace DataStructure
                 for(int j=i+1;j<alist.Count;j++)
                 {
                     int f1 = (int)alist[j];
-                    if(util.anagram(f,f1))
+                    if(util.Anagram(f,f1))
                     {
-                        List.enQueue(f);
-                        List.enQueue(f1);
+                        List.EnQueue(f);
+                        List.EnQueue(f1);
                     }
                 }
             }
             ////Dequeue the list and print by using m,ethod in Linked List class
-            while(List.total()!=0)
+            while(List.Total()!=0)
             {
-                List.dequeue();
+                List.Dequeue();
             }
         }
     }
