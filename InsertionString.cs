@@ -18,17 +18,17 @@ namespace Algorithm
         /// <summary>
         /// Sorts this instance  method for sorting the string type value.
         /// </summary>
-        public void sort()
+        public void Sort()
         {
             Console.WriteLine("Enter the Size Of Array");
-            int n3 = util.inputInteger();
+            int n3 = util.InputInteger();
             Console.WriteLine("Enter the Array Element in integer type");
             string[] ar3 = new string[n3];
             for (int i = 0; i < n3; i++)
             {
-                ar3[i] = util.inputString();
+                ar3[i] = util.InputString();
             }
-            string[] find3 = util.insertionSortString(ar3);
+            string[] find3 = util.InsertionSortString(ar3);
             Console.WriteLine("After Soting");
             for (int i = 0; i < find3.Length; i++)
             {

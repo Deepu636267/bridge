@@ -22,14 +22,14 @@ namespace Algorithm
         /// <param name="l">The l.</param>
         /// <param name="r">The r.</param>
         /// <returns></returns>
-        public string[] sort(string[] arr, int l, int r)
+        public string[] Sort(string[] arr, int l, int r)
         {
             if (l < r)
             {
                 int m = (l + r) / 2;
-                sort(arr, l, m);
-                sort(arr, m + 1, r);
-                util.merge(arr, l, m, r);
+                Sort(arr, l, m);
+                Sort(arr, m + 1, r);
+                util.Merge(arr, l, m, r);
             }
             return arr;
         }
@@ -37,7 +37,7 @@ namespace Algorithm
         /// Prints the  sorted array.
         /// </summary>
         /// <param name="arr">The arr.</param>
-        public void printArray(string[] arr)
+        public void PrintArray(string[] arr)
         {
             int n = arr.Length;
             for (int i = 0; i < n; ++i)

@@ -15,7 +15,7 @@ namespace Algorithm
     class GuessGame
     {
         Utility util = new Utility();
-        public void find()
+        public void Find()
         {
                int low = 0, high = 1000, mid;
                 while (low != high)
@@ -24,7 +24,7 @@ namespace Algorithm
                     ////Asking the question from user
                     Console.WriteLine("enter 1 if no is between " + low + " - " + mid + "\nEnter 2 if no is between "
                             + (mid + 1) + " - " + high);
-                    int c = util.inputInteger();
+                    int c = util.InputInteger();
                     mid = (low + high) / 2;
                     if (c == 1)
                         high = mid;

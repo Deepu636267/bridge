@@ -24,7 +24,7 @@ namespace Algorithm
         /// Inputs the integer.
         /// </summary>
         /// <returns></returns>
-        public int inputInteger()
+        public int InputInteger()
         {
             return Convert.ToInt32(Console.ReadLine());
         }
@@ -32,7 +32,7 @@ namespace Algorithm
         /// Inputs the string.
         /// </summary>
         /// <returns></returns>
-        public String inputString()
+        public string InputString()
         {
             return Console.ReadLine();
         }
@@ -40,7 +40,7 @@ namespace Algorithm
         /// Inputs the double.
         /// </summary>
         /// <returns></returns>
-        public double inputDouble()
+        public double InputDouble()
         {
             return Convert.ToDouble(Console.ReadLine());
         }
@@ -50,15 +50,15 @@ namespace Algorithm
         /// <param name="str1">The STR1.</param>
         /// <param name="str2">The STR2.</param>
         /// <returns></returns>
-        public bool anagramString(string str1, string str2)
+        public bool AnagramString(string str1, string str2)
         {
             ////To check the Both String length if they then its follow the Anagram process other wise its quit
             if (str1.Length == str2.Length)
             {
                 char[] str = str1.ToCharArray();
                 char[] st = str2.ToCharArray();
-                str = bubbleSortString(str);
-                st = bubbleSortString(st);
+                str = BubbleSortString(str);
+                st = BubbleSortString(st);
                 for (int i = 0; i < str1.Length; i++)
                     if (str[i] != st[i])
                         return false;
@@ -75,7 +75,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="str3">The STR3.</param>
         /// <returns></returns>
-        public char[] bubbleSortString(char[] str3)
+        public char[] BubbleSortString(char[] str3)
         {
             for(int i=0;i<str3.Length;i++)
             {
@@ -99,7 +99,7 @@ namespace Algorithm
         /// <returns>
         ///   <c>true</c> if the specified n is prime; otherwise, <c>false</c>.
         /// </returns>
-        public bool isPrime(int n)
+        public bool IsPrime(int n)
         {
             for (int i = 2; i <= n / 2; i++)
             {
@@ -117,7 +117,7 @@ namespace Algorithm
         /// <returns>
         ///   <c>true</c> if the specified n is pallindrome; otherwise, <c>false</c>.
         /// </returns>
-        public bool isPallindrome(int n)
+        public bool IsPallindrome(int n)
         {
             int temp = n;
             int sum = 0;
@@ -139,10 +139,10 @@ namespace Algorithm
         /// <param name="n1">The n1.</param>
         /// <param name="n2">The n2.</param>
         /// <returns></returns>
-        public bool anagramInt(int n1, int n2)
+        public bool AnagramInt(int n1, int n2)
         {
-            int[] n1count = count(n1);
-            int[] n2count = count(n2);
+            int[] n1count = Count(n1);
+            int[] n2count = Count(n2);
             for (int i = 0; i < n2count.Length; i++)
             {
                 if (n1count[i] != n2count[i])
@@ -157,7 +157,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int[] count(int n)
+        public int[] Count(int n)
         {
             int[] count = new int[10];
             int temp = n;
@@ -174,7 +174,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="str3">The STR3.</param>
         /// <returns></returns>
-        public int[] bubbleSortInteger(int[] str3)
+        public int[] BubbleSortInteger(int[] str3)
         {
             for (int i = 0; i < str3.Length; i++)
             {
@@ -196,9 +196,9 @@ namespace Algorithm
         /// <param name="ar">The ar.</param>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-        public int binarySearchInteger(int[] ar, int item)
+        public int BinarySearchInteger(int[] ar, int item)
         {
-            bubbleSortInteger(ar);
+            BubbleSortInteger(ar);
             int low = 0;
             int high = ar.Length - 1;
             while (low <= high)
@@ -219,7 +219,7 @@ namespace Algorithm
         /// <param name="ar">The ar.</param>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-        public int binarySearchString(string[] ar, String item)
+        public int BinarySearchString(string[] ar, String item)
         {
             //bubbleSort(ar);
             int low = 0;
@@ -243,7 +243,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="arr">The arr.</param>
         /// <returns></returns>
-        public string[] bubbleSort(string[] arr)
+        public string[] BubbleSort(string[] arr)
         {
             string temp = "";
             for (int i = 0; i < arr.Length - 1; i++)
@@ -265,7 +265,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="arr"></param>
         /// <returns></returns>
-        public int[] insertionSortInt(int[] arr)
+        public int[] InsertionSortInt(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {
@@ -285,7 +285,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="arr">The arr.</param>
         /// <returns></returns>
-        public string[] insertionSortString(string[] arr)
+        public string[] InsertionSortString(string[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {
@@ -303,21 +303,21 @@ namespace Algorithm
         /// <summary>
         /// Start() method is used for start the stop watch.
         /// </summary>
-        public void start()
+        public void Start()
         {
             startTimer = DateTime.Now.Millisecond;
         }
         /// <summary>
         /// Stop() method is used for stop the stop watch..
         /// </summary>
-        public void stop()
+        public void Stop()
         {
             stopTimer = DateTime.Now.Millisecond;
         }
         /// <summary>
         /// Gets the elapsed time.
         /// </summary>
-        public void getElapsedTime()
+        public void GetElapsedTime()
         {
             elapsed = stopTimer - startTimer;
             Console.WriteLine("Elapsed Time is: " + elapsed);
@@ -329,7 +329,7 @@ namespace Algorithm
         /// <param name="l">The l.</param>
         /// <param name="m">The m.</param>
         /// <param name="r">The r.</param>
-        public void merge(string[] arr, int l, int m, int r)
+        public void Merge(string[] arr, int l, int m, int r)
         {
             int n1 = m - l + 1;
             int n2 = r - m;
@@ -379,7 +379,7 @@ namespace Algorithm
         /// <param name="m">The m.</param>
         /// <param name="y">The y.</param>
         /// <returns></returns>
-        public int findDay(int d, int m, int y)
+        public int FindDay(int d, int m, int y)
         {
             int y0 = y - (14 - m) / 12;
             int x = y0 + y0 / 4 - y0 / 100 + y0 / 400;
@@ -408,7 +408,7 @@ namespace Algorithm
         /// <param name="P">The p.</param>
         /// <param name="n">The n.</param>
         /// <param name="r">The r.</param>
-        public void calculatePayment(double P, double n, double r)
+        public void CalculatePayment(double P, double n, double r)
         {
             double payment = (P * r) / (1 - Math.Pow((1 + r), (-n)));
             Console.WriteLine("The Monthly Payment is: " + payment);
@@ -418,7 +418,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="c">The c.</param>
         /// <returns></returns>
-        public double newtonsMethod(double c)
+        public double NewtonsMethod(double c)
         {
             double t = c;
             double epsilon = 1e-15;
@@ -433,7 +433,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public int[] convertBinary(int n)
+        public int[] ConvertBinary(int n)
         {
             string bin = "";
             while (n != 0)
@@ -447,14 +447,14 @@ namespace Algorithm
                 bin = 0 + bin;
             }
             Console.WriteLine("Binary Number is " + bin);
-            return stringToIntArray(bin);
+            return StringToIntArray(bin);
         }
         /// <summary>
         /// Strings to int array.
         /// </summary>
         /// <param name="bin">The bin.</param>
         /// <returns></returns>
-        public int[] stringToIntArray(string bin)
+        public int[] StringToIntArray(string bin)
         {
             int i = Convert.ToInt32(bin);
             int[] a = new int[bin.Length];
@@ -471,7 +471,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="arr">The arr.</param>
         /// <returns></returns>
-        public int[] swapNibbles(int[] arr)
+        public int[] SwapNibbles(int[] arr)
         {
             // swap nibbles at first and last of the array
             // j is used for saving last 4 index of the array
@@ -490,7 +490,7 @@ namespace Algorithm
         /// </summary>
         /// <param name="n">The n.</param>
         /// <returns></returns>
-        public bool powerOf2(int n)
+        public bool PowerOf2(int n)
         {
             //// calculate power of 2 using math.pow
             //// check if is equal to given no

@@ -35,96 +35,96 @@ namespace Algorithm
                     case 1:
                         Console.WriteLine("\nFinding the Angaram between two string Operation To be Performed:");
                         Angaram ana = new Angaram();
-                        ana.checkAnagram();
+                        ana.CheckAnagram();
                         break;
                     case 2:
                         Console.WriteLine("\nFinding the Prime Number Between 0 to 1000 Operation To be Performed:");
                         PrimeNumber prime = new PrimeNumber();
-                        prime.prime();
+                        prime.Prime();
                         break;
                     case 3:
                         Console.WriteLine("\nFinding the Prime Number Between 0 to 1000  and then find pallindrome an then Anagram Operation To be Performed:");
                         PAP aP = new PAP();
-                        aP.checkPAP();
+                        aP.CheckPAP();
                         break;
                     case 4:
                         Console.WriteLine("\nAll Searching and Sorting Operation To be Performed:");
                         SS s = new SS();
-                        s.operation();
+                        s.Operation();
                         break;
                     case 5:
                         Console.WriteLine("\nPlay the Guess Game Number:");
                         Console.WriteLine("guess a no between 0 to 1000");
-                        int d6 = util.inputInteger();
+                        int d6 = util.InputInteger();
                         GuessGame game = new GuessGame();
-                        game.find();
+                        game.Find();
                         break;
                     case 6:
                         Console.WriteLine("\nBinary Search From file Operation To be Performed:");
                         BinarySearchFile fileHandle = new BinarySearchFile();
-                        fileHandle.file();
+                        fileHandle.File();
                         break;
                     case 7:
                         Console.WriteLine("\nInsertion Sort for String Operation To be Performed:");
                         InsertionString insertion = new InsertionString();
-                        insertion.sort();
+                        insertion.Sort();
                         break;
                     case 8:
                         Console.WriteLine("\nBubbleSort for Integer Operation To be Performed:");
                         BubbleSortInteger integer = new BubbleSortInteger();
-                        integer.bubble();
+                        integer.Bubble();
                         break;
                     case 9:
                         Console.WriteLine("\nMerge Sort for String Operation To be Performed:");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n4 = util.inputInteger();
+                        int n4 = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in String type");
                         string[] ar4 = new string[n4];
                         for (int i = 0; i < n4; i++)
                         {
-                            ar4[i] = util.inputString();
+                            ar4[i] = util.InputString();
                         }
                         MergeSort merge = new MergeSort();
-                        string[] find4 = merge.sort(ar4, 0, ar4.Length - 1);
+                        string[] find4 = merge.Sort(ar4, 0, ar4.Length - 1);
                         Console.WriteLine("After Soting");
-                        merge.printArray(find4);
+                        merge.PrintArray(find4);
                         break;
                     case 10:
                         Console.WriteLine("\nVending Machine Operation To be Performed:");
                         Console.WriteLine("Enter the amount do you want change");
-                        int amount = util.inputInteger();
+                        int amount = util.InputInteger();
                         Notes notes = new Notes();
-                        notes.countCurrency(amount);
+                        notes.CountCurrency(amount);
                         break;
                     case 11:
                         Console.WriteLine("\nFor calculating the day Operation To be Performed:");
                         Day day = new Day();
-                        day.calculateDay();
+                        day.CalculateDay();
                         break;
                     case 12:
                         Console.WriteLine("\nTemperature Conversion Operation To be Performed:");
                         TemperatureConversion temp = new TemperatureConversion();
-                        temp.converter();
+                        temp.Converter();
                         break;
                     case 13:
                         Console.WriteLine("\nCalculating the Monthly PAyment Operation To be Performed:");
                         MonthlyPayment monthly = new MonthlyPayment();
-                        monthly.payment();
+                        monthly.Payment();
                         break;
                     case 14:
                         Console.WriteLine("\nFinding the Square Root of Non negative Number Operation To be Performed:");
                         SqrtNonNegative sqr = new SqrtNonNegative();
-                        sqr.sqrt();
+                        sqr.Sqrt();
                         break;
                     case 15:
                         Console.WriteLine("\nConversion From Deimal To binary Operation To be Performed:");
                         DecimalToBinary binary = new DecimalToBinary();
-                        binary.binary();
+                        binary.Binary();
                         break;
                     case 16:
                         Console.WriteLine("\nConver sion From Decimal to binary then Swa nibbles And then check the power of two Operation To be Performed:");
                         SwapNibbles swap = new SwapNibbles();
-                        swap.swap();
+                        swap.Swap();
                         break;
                 }
             }catch(Exception e)

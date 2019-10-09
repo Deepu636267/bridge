@@ -18,17 +18,17 @@ namespace Algorithm
         /// <summary>
         /// SQRTs this instance provinding inut and find square root with the help of util function in that method has been defined.
         /// </summary>
-        public void sqrt()
+        public void Sqrt()
         {
             Console.WriteLine("Enter th Non negative Number To calculate Sqrt");
-            double c = util.inputDouble();
+            double c = util.InputDouble();
             if(c<=0)
             {
                 Console.WriteLine("Enter the Positive Number");
             }
             else
             {
-               double t= util.newtonsMethod(c);
+               double t= util.NewtonsMethod(c);
                 Console.WriteLine("Square root of " + c + " Non Negative Number is " + t);
             }
         }

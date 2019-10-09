@@ -18,16 +18,16 @@ namespace Algorithm
         /// <summary>
         /// Calculates the day.
         /// </summary>
-        public void calculateDay()
+        public void CalculateDay()
         {
             Console.WriteLine("Enter the date.");
-            int d = util.inputInteger();
+            int d = util.InputInteger();
             Console.WriteLine("Enter the Month As... For Jan press 01,\nFor Feb press 02,\nFor March press 03,\nFor April press 04,\nFor May press 05"
                  +"\nFor Jun press 06,\nFor July press 07,\nFor Aug press 08,\nFor Sept press 09,\nFor October press 10,\nFor Nov press 11,\nFor Dec press 12");
-            int m = util.inputInteger();
+            int m = util.InputInteger();
             Console.WriteLine("Enter the year");
-            int y = util.inputInteger();
-            int day = util.findDay(d,m,y);
+            int y = util.InputInteger();
+            int day = util.FindDay(d,m,y);
             switch(day)
             {
                 case 0:

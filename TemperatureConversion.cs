@@ -18,23 +18,23 @@ namespace Algorithm
         /// <summary>
         /// Converters this instance.
         /// </summary>
-        public void converter()
+        public void Converter()
         {
             Console.WriteLine("1.For Converting Degree Celcius to Farenhite,\n2. For Farenhite to Degree Celcius");
-            int choose = util.inputInteger();
+            int choose = util.InputInteger();
             ////switch() is used for operation performed by choice of user
             switch(choose)
             {
                 case 1:
                     Console.WriteLine("Converting Degree Celcius to Farenhite Operation to be performed :");
                     Console.WriteLine("\nEnter the Temprature in Degree Celcius");
-                    int C = util.inputInteger();
+                    int C = util.InputInteger();
                     util.DC2F(C);
                     break;
                 case 2:
                     Console.WriteLine(" Converting Farenhite to Degree Celcius Operation to be performed");
                     Console.WriteLine("\nEnter the Temprature in Farenhite");
-                    int F = util.inputInteger();
+                    int F = util.InputInteger();
                     util.F2C(F);
                     break;
             }

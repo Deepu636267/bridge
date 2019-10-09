@@ -18,13 +18,13 @@ namespace Algorithm
         /// <summary>
         /// Checks the anagram between the two string.
         /// </summary>
-        public void checkAnagram()
+        public void CheckAnagram()
         {
             Console.WriteLine("Enter the first String To check Angram");
-            string s1 = util.inputString();
+            string s1 = util.InputString();
             Console.WriteLine("Enter the Second String To check Angram");
-            string s2 = util.inputString();
-            bool b = util.anagramString(s1, s2);
+            string s2 = util.InputString();
+            bool b = util.AnagramString(s1, s2);
             if (b == true)
                 Console.WriteLine(s1 + " and " + s2 + " Both String Are Angaram.");
             else

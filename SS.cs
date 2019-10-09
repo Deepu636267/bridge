@@ -18,7 +18,7 @@ namespace Algorithm
         /// <summary>
         /// Operations this instance holds all case to be performed with user choice.
         /// </summary>
-        public void operation()
+        public void Operation()
         {
             Console.WriteLine("List Of the Program.................");
             Console.WriteLine("1.binarySearch method for integer" + " \n2.binarySearch method for String" + "\n 3.insertionSort method for integer"
@@ -26,131 +26,131 @@ namespace Algorithm
                 Console.WriteLine("Enter choice For above Operation");
             try
             {
-                int choice = util.inputInteger();
+                int choice = util.InputInteger();
                 ////switch() is used for operation performed by choice of user
                 switch (choice)
                 {
                     case 1:
                         Console.WriteLine("binarySearch method for integer Operation to be Performed");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n = util.inputInteger();
+                        int n = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in integer type");
                         int[] ar = new int[n];
                         for (int i = 0; i < n; i++)
                         {
-                            ar[i] = util.inputInteger();
+                            ar[i] = util.InputInteger();
                         }
                         Console.WriteLine("Enter the Value to Search");
-                        int item = util.inputInteger();
-                        util.start();
-                        int find = util.binarySearchInteger(ar, item);
+                        int item = util.InputInteger();
+                        util.Start();
+                        int find = util.BinarySearchInteger(ar, item);
                         if (find == -1)
                             Console.WriteLine(item + " not Found");
                         else
                             Console.WriteLine(item + " Found at " + find);
-                        util.stop();
-                        util.getElapsedTime();
+                        util.Stop();
+                        util.GetElapsedTime();
                         break;
                     case 2:
                         Console.WriteLine("binarySearch method for String Operation to be Performed");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n1 = util.inputInteger();
+                        int n1 = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in String type");
                         string[] ar1 = new string[n1];
                         for (int i = 0; i < n1; i++)
                         {
-                            ar1[i] = util.inputString();
+                            ar1[i] = util.InputString();
                         }
                         Console.WriteLine("Enter the Value to Search");
-                        string item1 = util.inputString();
-                        util.start();
-                        int find1 = util.binarySearchString(ar1, item1);
+                        string item1 = util.InputString();
+                        util.Start();
+                        int find1 = util.BinarySearchString(ar1, item1);
                         if (find1 == -1)
                             Console.WriteLine(item1 + " not Found");
                         else
                             Console.WriteLine(item1 + " Found at " + find1);
-                        util.stop();
-                        util.getElapsedTime();
+                        util.Stop();
+                        util.GetElapsedTime();
                         break;
                     case 3:
                         Console.WriteLine("Insertion sort method for Integer Operation to be Performed");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n2 = util.inputInteger();
+                        int n2 = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in integer type");
                         int[] ar2 = new int[n2];
                         for (int i = 0; i < n2; i++)
                         {
-                            ar2[i] = util.inputInteger();
+                            ar2[i] = util.InputInteger();
                         }
-                        util.start();
-                        int[] find2 = util.insertionSortInt(ar2);
+                        util.Start();
+                        int[] find2 = util.InsertionSortInt(ar2);
                         Console.WriteLine("After Soting");
                         for (int i = 0; i < find2.Length; i++)
                         {
                             Console.Write(find2[i] + " ");
                         }
-                        util.stop();
-                        util.getElapsedTime();
+                        util.Stop();
+                        util.GetElapsedTime();
                         break;
                     case 4:
                         Console.WriteLine("Insertion sort method for String Operation to be Performed");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n3 = util.inputInteger();
+                        int n3 = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in String type");
                         string[] ar3 = new string[n3];
                         for (int i = 0; i < n3; i++)
                         {
-                            ar3[i] = util.inputString();
+                            ar3[i] = util.InputString();
                         }
-                        util.start();
-                        string[] find3 = util.insertionSortString(ar3);
+                        util.Start();
+                        string[] find3 = util.InsertionSortString(ar3);
                         Console.WriteLine("After Soting");
                         for (int i = 0; i < find3.Length; i++)
                         {
                             Console.Write(find3[i] + " ");
                         }
-                        util.stop();
-                        util.getElapsedTime();
+                        util.Stop();
+                        util.GetElapsedTime();
                         break;
                     case 5:
                         Console.WriteLine("Bubble sort method for Integer Operation to be Performed");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n4 = util.inputInteger();
+                        int n4 = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in integer type");
                         int[] ar4 = new int[n4];
                         for (int i = 0; i < n4; i++)
                         {
-                            ar4[i] = util.inputInteger();
+                            ar4[i] = util.InputInteger();
                         }
-                        util.start();
-                        int[] find4 = util.bubbleSortInteger(ar4);
+                        util.Start();
+                        int[] find4 = util.BubbleSortInteger(ar4);
                         Console.WriteLine("After Soting");
                         for (int i = 0; i < find4.Length; i++)
                         {
                             Console.Write(find4[i] + " ");
                         }
-                        util.stop();
-                        util.getElapsedTime();
+                        util.Stop();
+                        util.GetElapsedTime();
                         break;
                     case 6:
                         Console.WriteLine("Bubble sort method for String Operation to be Performed");
                         Console.WriteLine("Enter the Size Of Array");
-                        int n5 = util.inputInteger();
+                        int n5 = util.InputInteger();
                         Console.WriteLine("Enter the Array Element in String type");
                         string[] ar5 = new string[n5];
                         for (int i = 0; i < n5; i++)
                         {
-                            ar5[i] = util.inputString();
+                            ar5[i] = util.InputString();
                         }
-                        util.start();
-                        string[] find5 = util.bubbleSort(ar5);
+                        util.Start();
+                        string[] find5 = util.BubbleSort(ar5);
                         Console.WriteLine("After Soting");
                         for (int i = 0; i < find5.Length; i++)
                         {
                             Console.Write(find5[i] + " ");
                         }
-                        util.stop();
-                        util.getElapsedTime();
+                        util.Stop();
+                        util.GetElapsedTime();
                         break;
                     default:
                         Console.WriteLine("Enter valid Input");

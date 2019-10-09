@@ -15,17 +15,17 @@ namespace Algorithm
     class MonthlyPayment
     {
         Utility util = new Utility();
-        public void payment()
+        public void Payment()
         {
             Console.WriteLine("Enter the Principal Amount");
-            double P = util.inputDouble();
+            double P = util.InputDouble();
             Console.WriteLine("Enter the Year");
-            double Y = util.inputDouble();
+            double Y = util.InputDouble();
             Console.WriteLine("Enter the Rate of Interest");
-            double R = util.inputDouble();
+            double R = util.InputDouble();
             double n = 12 * Y;
             double r = R / (12 * 100);
-            util.calculatePayment(P, n, r);
+            util.CalculatePayment(P, n, r);
         }
     }
 }

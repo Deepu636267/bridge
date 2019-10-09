@@ -15,17 +15,17 @@ namespace Algorithm
     class BubbleSortInteger
     {
         Utility util = new Utility();
-        public void bubble()
+        public void Bubble()
         {
             Console.WriteLine("Enter the Size Of Array");
-            int n4 = util.inputInteger();
+            int n4 = util.InputInteger();
             Console.WriteLine("Enter the Array Element in integer type");
             int[] ar4 = new int[n4];
             for (int i = 0; i < n4; i++)
             {
-                ar4[i] = util.inputInteger();
+                ar4[i] = util.InputInteger();
             }
-            int[] find4 = util.bubbleSortInteger(ar4);
+            int[] find4 = util.BubbleSortInteger(ar4);
             Console.WriteLine("After Soting");
             for (int i = 0; i < find4.Length; i++)
             {

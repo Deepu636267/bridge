@@ -18,12 +18,12 @@ namespace Algorithm
         /// <summary>
         /// Swaps this instance.
         /// </summary>
-        public void swap()
+        public void Swap()
         {
             Console.WriteLine("Enter the Decimal number to convert in binary");
-            int Num = util.inputInteger();
-            int[] bin = util.convertBinary(Num);
-            int[] decim = util.swapNibbles(bin);
+            int Num = util.InputInteger();
+            int[] bin = util.ConvertBinary(Num);
+            int[] decim = util.SwapNibbles(bin);
             int deci = 0;
             Console.WriteLine("After Swapping th New Binary Representation is: ");
             for(int i=decim.Length-1;i>=0;i--)
@@ -41,7 +41,7 @@ namespace Algorithm
             }
             Console.Write(deci);
             Console.WriteLine();
-            bool check = util.powerOf2(Num);
+            bool check = util.PowerOf2(Num);
             if(check==true)
             {
                 Console.WriteLine("It has a Power of Two");

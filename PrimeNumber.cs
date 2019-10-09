@@ -15,12 +15,12 @@ namespace Algorithm
     class PrimeNumber
     {
         Utility util = new Utility();
-        public void prime()
+        public void Prime()
         {
             bool b = false;
             for (int i = 2; i <= 1000; i++)
             {
-                b = util.isPrime(i);
+                b = util.IsPrime(i);
                 if (b == true)
                     Console.Write(i + ",");
             }

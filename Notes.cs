@@ -18,7 +18,7 @@ namespace Algorithm
         /// Counts the currency.
         /// </summary>
         /// <param name="amount">The amount.</param>
-        public void countCurrency(int amount)
+        public void CountCurrency(int amount)
         {
             int[] notes = new int[] { 2000, 500, 200, 100, 50, 10, 5, 1 };
             int[] noteCounter = new int[8];

@@ -20,7 +20,7 @@ namespace Algorithm
         /// </summary>
        //// <summary>
         Utility util = new Utility();
-        public void checkPAP()
+        public void CheckPAP()
         {
             bool b = false;
             int k = 0;
@@ -28,7 +28,7 @@ namespace Algorithm
             Console.WriteLine("Prime Numbers: ");
             for (int i = 2; i <= 1000; i++)
             {
-                b = util.isPrime(i);
+                b = util.IsPrime(i);
                 if (b == true)
                 {
                     Console.Write(i + ",");
@@ -39,7 +39,7 @@ namespace Algorithm
             Console.WriteLine("Prime Numbers and Pallendrome are :");
             for (int i = 0; i <a.Length; i++)
             {
-                if (util.isPallindrome(a[i]))
+                if (util.IsPallindrome(a[i]))
                 {
                     Console.Write(a[i] + ",");
                 }
@@ -50,7 +50,7 @@ namespace Algorithm
             {
                 for (int j = i + 1; j < a.Length; j++)
                 {
-                    if (util.anagramInt(a[i],a[j]))
+                    if (util.AnagramInt(a[i],a[j]))
                     {
                         Console.WriteLine(a[i] + "->" + a[j]);
                     }

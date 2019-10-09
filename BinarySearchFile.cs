@@ -19,7 +19,7 @@ namespace Algorithm
         /// <summary>
         /// Files this instance to read the string from file.
         /// </summary>
-        public void file()
+        public void File()
         {
             // Takinga a new input stream i.e.  
             // geeksforgeeks.txt and opens it 
@@ -34,14 +34,14 @@ namespace Algorithm
             }
             //// split the string line with space and put in the array
             string[] data = st.Split(" ");
-            string[] data1 = util.bubbleSort(data);
+            string[] data1 = util.BubbleSort(data);
             for(int i=0;i<data1.Length;i++)
             {
                 Console.WriteLine(data1[i]);
             }
             Console.WriteLine("Enter the String Do you Want To search");
-            string item=util.inputString();
-            int found = util.binarySearchString(data1,item);
+            string item=util.InputString();
+            int found = util.BinarySearchString(data1,item);
             if(found==-1)
             {
                 Console.WriteLine(item + " are Not Found.");

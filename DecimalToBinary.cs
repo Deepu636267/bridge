@@ -18,11 +18,11 @@ namespace Algorithm
         /// <summary>
         /// Binaries this instance.
         /// </summary>
-        public void binary()
+        public void Binary()
         {
             Console.WriteLine("Enter the Decimal number to convert in binary");
-            int Num = util.inputInteger();
-            int[] bin = util.convertBinary(Num);
+            int Num = util.InputInteger();
+            int[] bin = util.ConvertBinary(Num);
             Console.WriteLine("Representation in 4 byte: ");
             for (int i = bin.Length - 1; i >= 0; i--)
             {
