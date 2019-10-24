@@ -1,10 +1,10 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file=Program.cs" company="Bridgelabz">
+// <copyright file=IAutomobile.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Sachin Kumar Maurya"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace DesignPattern.DependencyInversionPrinciple
+namespace DesignPattern.DependencyInjectionPrinciple
 {
     using System;
     using System.Collections.Generic;

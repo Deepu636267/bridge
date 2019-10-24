@@ -1,19 +1,19 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file=SUV.cs" company="Bridgelabz">
+// <copyright file=Jeep.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Sachin Kumar Maurya"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace DesignPattern.DependencyInversionPrinciple
+namespace DesignPattern.DependencyInjectionPrinciple
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
     /// <summary>
-    /// SUV is a class which inherit an interface IAutomobile
+    /// Jeep is class which inherited the IAutomobile interface
     /// </summary>
     /// <seealso cref="DesignPattern.DependencyInversionPrinciple.IAutomobile" />
-    public class SUV : IAutomobile
+    public class Jeep : IAutomobile
     {
         #region IAutomobile Members        
         /// <summary>
@@ -21,14 +21,14 @@ namespace DesignPattern.DependencyInversionPrinciple
         /// </summary>
         public void Ignition()
         {
-            Console.WriteLine("SUV start");
+            Console.WriteLine("Jeep start");
         }
         /// <summary>
         /// Stops this instance.
         /// </summary>
         public void Stop()
         {
-            Console.WriteLine("SUV stopped.");
+            Console.WriteLine("Jeep stopped.");
         }
         #endregion
     }

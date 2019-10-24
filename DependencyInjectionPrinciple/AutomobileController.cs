@@ -1,35 +1,41 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file=Jeep.cs" company="Bridgelabz">
+// <copyright file=AutomobileController.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Sachin Kumar Maurya"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace DesignPattern.DependencyInversionPrinciple
+namespace DesignPattern.DependencyInjectionPrinciple
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
     /// <summary>
-    /// Jeep is class which inherited the IAutomobile interface
+    /// AutomobileController is class 
     /// </summary>
-    /// <seealso cref="DesignPattern.DependencyInversionPrinciple.IAutomobile" />
-    public class Jeep : IAutomobile
+    public class AutomobileController
     {
-        #region IAutomobile Members        
+        IAutomobile m_Automobile;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutomobileController"/> class.
+        /// </summary>
+        /// <param name="automobile">The automobile.</param>
+        public AutomobileController(IAutomobile automobile)
+        {
+            this.m_Automobile = automobile;
+        }
         /// <summary>
         /// Ignitions this instance.
         /// </summary>
         public void Ignition()
         {
-            Console.WriteLine("Jeep start");
+            m_Automobile.Ignition();
         }
         /// <summary>
         /// Stops this instance.
         /// </summary>
         public void Stop()
         {
-            Console.WriteLine("Jeep stopped.");
+            m_Automobile.Stop();
         }
-        #endregion
     }
 }

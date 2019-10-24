@@ -1,41 +1,35 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file=AutomobileController.cs" company="Bridgelabz">
+// <copyright file=SUV.cs" company="Bridgelabz">
 //   Copyright © 2019 Company="BridgeLabz"
 // </copyright>
 // <creator name="Sachin Kumar Maurya"/>
 // --------------------------------------------------------------------------------------------------------------------
-namespace DesignPattern.DependencyInversionPrinciple
+namespace DesignPattern.DependencyInjectionPrinciple
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
     /// <summary>
-    /// AutomobileController is class 
+    /// SUV is a class which inherit an interface IAutomobile
     /// </summary>
-    public class AutomobileController
+    /// <seealso cref="DesignPattern.DependencyInversionPrinciple.IAutomobile" />
+    public class SUV : IAutomobile
     {
-        IAutomobile m_Automobile;
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AutomobileController"/> class.
-        /// </summary>
-        /// <param name="automobile">The automobile.</param>
-        public AutomobileController(IAutomobile automobile)
-        {
-            this.m_Automobile = automobile;
-        }
+        #region IAutomobile Members        
         /// <summary>
         /// Ignitions this instance.
         /// </summary>
         public void Ignition()
         {
-            m_Automobile.Ignition();
+            Console.WriteLine("SUV start");
         }
         /// <summary>
         /// Stops this instance.
         /// </summary>
         public void Stop()
         {
-            m_Automobile.Stop();
+            Console.WriteLine("SUV stopped.");
         }
+        #endregion
     }
 }
